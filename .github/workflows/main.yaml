@@ -5,7 +5,7 @@ on:
     branches:
       - main
 jobs:
-  docker:
+  docker-build-and-push:
     runs-on: ubuntu-latest
     steps:
       -
@@ -20,3 +20,9 @@ jobs:
         with:
           push: true
           tags: bjjware/githubaction-hello-world:latest
+  my-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: my-step
+        run: echo "Hello World!"
+    
