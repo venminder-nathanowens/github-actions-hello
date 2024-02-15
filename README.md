@@ -22,7 +22,7 @@ $ docker run --name my-container -d -p 8080:8080 solankiarpan/githubactions-hell
 
 Now visit http://localhost:8080
 ```
- The hostname of the container is 6095273a4e9b and its IP is 172.17.0.2. 
+ The hostname of the container is 3eefbfbad102 and its IP is 172.17.0.2. 
 ```
 
 ### Verify the running container
@@ -31,7 +31,7 @@ Verify by checking the container ip and hostname (ID):
 $ docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' my-container
 172.17.0.2
 $ docker inspect -f '{{ .Config.Hostname }}' my-container
-6095273a4e9b
+3eefbfbad102
 ```
 
 
