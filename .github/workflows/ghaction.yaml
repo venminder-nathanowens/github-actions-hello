@@ -17,5 +17,5 @@ jobs:
           password: ${{secrets.GITHUB_TOKEN}}
       - name: 'Build & Push Image'
         run: |
-          docker build . --tag ghcr.io/solanki/github-action-hello:latest
+          docker build . --tag ghcr.io/solankiarpan/github-action-hello:latest
           docker push ghcr.io/solankiarpan/github-action-hello:latest
