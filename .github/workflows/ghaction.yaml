@@ -16,7 +16,6 @@ jobs:
           username: ${{github.actor}}
           password: ${{secrets.GITHUB_TOKEN}}
       - name: Build and push
-        uses: docker/build-push-action@v5
-        with:
-          push: true
-          tags: solankiarpan/githubaction-hello-world:latest
+        run:
+          docker build . --tag ghcr.io/solankiarpan/githubactions-hello:latest
+          docker push ghcr.io/solankiarpan/githubactions-hello:latest
