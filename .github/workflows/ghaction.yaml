@@ -25,5 +25,5 @@ jobs:
 
       - name: 'Build & Push Image'
         run: |
-          docker build . --tag ghcr.io/${{ github.repository_owner }}/githubactions-hello:latest
-          docker push ghcr.io/${{ github.repository_owner }}/githubactions-hello:latest
+          docker build . --tag ghcr.io/${{ github.repository_owner }}/test:latest
+          docker push ghcr.io/${{ github.repository_owner }}/test:latest
