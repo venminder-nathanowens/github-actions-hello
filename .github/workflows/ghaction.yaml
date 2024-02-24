@@ -15,7 +15,7 @@ jobs:
           registry: ghcr.io
           username: ${{github.actor}}
           password: ${{secrets.GITHUB_TOKEN}}
-      - name: Build and push
-        run:
-          docker build . --tag ghcr.io/solankiarpan/githubactions-hello:latest
+      - name: 'Build & Push Image'
+        run: |
+          docker build . --tag ghcr.io/solanki/githubactions-hello:latest
           docker push ghcr.io/solankiarpan/githubactions-hello:latest
